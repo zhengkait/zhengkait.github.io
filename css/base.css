@@ -1,0 +1,513 @@
+
+
+	html,body{
+		height: 100%;
+		color: #FFFFFF;
+		font-size: 16px;
+		background: url(../img/bgimages/bgimg1.jpg) repeat center;
+		background-size: cover;
+	}
+	
+	@media only screen and (min-width: 640px) and (max-width: 1920px) {
+		html,body{
+		height: 100%;
+		min-height: 720px;
+		color: #FFFFFF;
+		font-size: 16px;
+		background: url(../img/bgimages/bgimg1.jpg) repeat center;
+		background-size: cover;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		html,body{
+		height: 100%;
+		color: #FFFFFF;
+		font-size: 12px;
+		background: url(../img/bgimages/bgimg1.jpg) repeat center;
+		background-size: cover;
+	}
+	}
+	}
+	
+	.container{
+		height: 100%;
+	}
+	
+	#stars {
+      margin: 0 auto;
+      max-width: 1600px;
+      position: fixed;
+      height: 1px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /*z-index: 2;*/
+    }
+    .star {
+      display: block;
+　　　 width: 1px;
+      background: transparent;
+      position: relative;
+      opacity: 0;
+      /*z-index: 100;*/
+      /*过渡动画*/ 
+      animation: star-fall 3s linear infinite;
+      -webkit-animation: star-fall 3s linear infinite;
+      -moz-animation: star-fall 3s linear infinite;
+    }
+    
+    .star:after {
+      content: '';
+      display: block;
+      border: 0px solid #fff;
+      border-width: 0px 90px 2px 90px;
+      border-color: transparent transparent transparent rgba(255, 255, 255, .5);
+      box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+      /*变形*/       
+      transform: rotate(-45deg) translate3d(1px, 3px, 0);
+      -webkit-transform: rotate(-45deg) translate3d(1px, 3px, 0);
+      -moz-transform: rotate(-45deg) translate3d(1px, 3px, 0);
+      transform-origin: 0% 100%;
+      -webkit-transform-origin: 0% 100%;
+      -moz-transform-origin: 0% 100%;
+    }
+    @keyframes star-fall {
+      0% {
+        opacity: 0;
+        transform: scale(0.5) translate3d(0, 0, 0);
+        -webkit-transform: scale(0.5) translate3d(0, 0, 0);
+        -moz-transform: scale(0.5) translate3d(0, 0, 0);
+      }
+      50% {
+        opacity: 1;
+        transform: translate3d(-200px, 200px, 0);
+        -webkit-transform: translate3d(-200px, 200px, 0);
+        -moz-transform: translate3d(-200px, 200px, 0);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -webkit-transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -moz-transform: scale(1.2) translate3d(-300px, 300px, 0);
+      }
+    }
+    
+	#mynavbar li a:visited{
+    	color: #ccc;
+    }
+	.say{
+		margin-top: 15%;
+		font-family: '华文彩云';
+		font-size: 50px;
+		text-align: center;
+		opacity: 0;
+		animation: sayfade 2s;
+		animation-fill-mode: forwards;
+	}
+	
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.say{
+			margin-top: 40%;
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+	
+	.mys{
+		margin-top: 5%;
+		font-family: '方正舒体';
+		font-size: 35px;
+		text-align: center;
+		opacity: 0;
+		animation: sayfade 2s 0.5s;
+		animation-fill-mode:forwards;
+	}
+	.abm-myskill{
+		margin-top: 5%;
+		opacity: 0;
+		animation: sayfade 2s 1s;
+		animation-fill-mode:forwards;
+	}
+	
+	.abm a{
+		height: 50px;
+		width: 150px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 28px;
+		font-weight: bold;
+		color: #C0C0C0;
+		border-radius: 20px;
+		background: blueviolet;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.abm a{
+		height: 50px;
+		width: 100px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		font-weight: bold;
+		color: black;
+		border-radius: 20px;
+		background: blueviolet;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	}
+	.myskill a{
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 28px;
+		font-weight: bold;
+		border-radius: 20px;
+		background: #C0C0C0;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.myskill a{
+		width: 100px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 20px;
+		background: #C0C0C0;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	}
+		
+
+		/*关于我部分开始*/
+	.about-me-title{
+		margin-top: 6%;
+		text-align: center;
+	}
+	
+	.photo img{
+		width: 100px;
+		height: 100px;
+		margin: 3% auto;
+		border-radius: 50%;
+	}
+	.me{
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.myinformation{
+		display: none;
+	}
+
+		/*关于我部分结束*/
+	
+	
+		/*求职意向部分开始*/
+	.intention-title{
+		margin-top: 6%;
+		text-align: center;
+	}
+	.Q-and-A{
+		margin-top: 3%;
+		display: none;
+	}
+	.Q li{
+		list-style: none;
+		border: 1px solid #000;
+		border-radius: 10px;
+		padding-left: 15px;
+		margin: 15px auto;
+		cursor: pointer;
+	}
+	.Q li:hover{
+		box-shadow: -3px 6px 3px #000000, 3px 0 3px #FFFFff;
+	}
+	.Q-li-active{
+		background: blueviolet;
+	}
+	.A{
+		
+		border-radius: 50px;
+		border: 1px solid #000;
+		text-align: center;
+		overflow: hidden;
+	}
+	.answer-answer{
+		height: 200px;
+		overflow: hidden;
+	}
+	.intention-intention{
+		display: none;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 790px) {
+		.Q-and-A{
+			font-size: 14px;
+	}
+	.Q li{
+		list-style: none;
+		border: 1px solid #000;
+		border-radius: 10px;
+		padding-left: 15px;
+		margin: 5px auto;
+	}
+	.answer-answer{
+		height: 125px;
+		overflow: hidden;
+	}
+	.an>p{
+		line-height: 12px;
+	}
+	}	
+	
+	.intent-title{
+		margin-top: 3%;
+	}	
+	.intention-intention{
+		margin-top: 3%;
+	}
+	.intention-details{
+		padding-top: 15px;
+		color: #FFFFFF;
+	}
+	.intention-details p:nth-child(2){
+		color: #FFFFFF;
+	}
+	.intention-img img{
+		width: 150px;
+		height: 150px;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 780px) {
+		
+		.intention-details{
+			font-size: 14px;
+		}
+		.intention-img img{
+		width: 100px;
+		height: 100px;
+	}
+	}
+	/*求职意向部分结束*/
+	
+	
+	
+	/*技能部分开始*/
+
+	.skill-title{
+		margin-top: 6%;
+		text-align: center;
+	}
+	.skill-list{
+		margin-top: 5%;
+	}
+	.skill-list img{
+		background: pink;
+		display: block;
+		margin: auto;
+	}
+	
+	.skill-list p{
+		display: block;
+		font-weight: bold;
+		margin: 15px auto;
+		text-align: center;
+		opacity: 0;
+		animation-fill-mode: forwards;
+	}
+	.other-skill{
+		margin: 3%;
+		color: #FFFFFF;
+		font-size: 16px;
+		font-weight: bold;
+		display: none;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.skill-list p{
+		display: block;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 0px auto;
+		text-align: center;
+		opacity: 0;
+		animation-fill-mode: forwards;
+	}
+		.other-skill{
+		margin: 2%;
+		color: #FFFFFF;
+		font-size: 12px;
+		font-weight: bold;
+		display: none;
+	}
+	}
+	
+	.skill-box1,.skill-box2,.skill-box3,.skill-box4{
+		width: 100px; 
+		height: 100px; 
+		border: 1px soild #000; 
+		margin: auto;
+		display: none;
+		
+	}
+	
+	
+	/*技能部分结束*/
+	
+	/*经验部分开始*/
+	
+	
+	
+	.experence-title{
+		margin-top: 6%;
+		text-align: center;
+	}
+	.experence-details{
+		margin: 5%;
+		color: #FFFFFF;
+		display: none;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.experence-details{
+		font-size: 12px;
+	}
+	}
+	.experence-details>p:nth-child(2),.tell>p:nth-child(3){
+		color: black;
+		margin: 5px 20px;
+	}
+		
+	
+	@media only screen and (min-width: 320px) and (max-width: 640px) {
+		.experence-img img{
+			width: 300px;
+			height: 300px;
+		}
+	}
+	@media only screen and (min-width: 100px) and (max-width: 320px) {
+		.experence-img img{
+			width: 180px;
+			height: 150px;
+		}
+	}
+	/*经验部分结束*/
+	
+	/*作品部分开始*/
+	.works-title{
+		margin-top: 6%;
+		text-align: center;
+	}
+	.works-list{
+		margin-top: 3%;
+		display: none;
+	}
+	
+	.one,.two,.three,.four{
+		width: 200px;
+		height: 200px;
+		margin: 5px;
+	}
+	.one a {
+		color: #FFFFFF;
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 200px;
+		background: url(../img/works/01.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.one a:hover{
+		opacity: 0.2;
+	}
+	.two a:hover{
+		opacity: 0.2;
+	}
+	.three a:hover{
+		opacity: 0.2;
+	}
+	.four a:hover{
+		opacity: 0.2;
+	}
+	.one p,.two p,.three p,.four p {
+		text-align: center;
+		margin-top: -100px;
+		display: none;
+	}
+	.two a{
+		color: #FFFFFF;
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 200px;
+		background: url(../img/works/02.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.three a{
+		color: #FFFFFF;
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 200px;
+		background: url(../img/works/03.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.four a{
+		color: #FFFFFF;
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 200px;
+		background: url(../img/works/04.jpg) no-repeat center;
+		background-size: cover;
+	}
+	
+	@media only screen and (min-width: 320px) and (max-width: 640px) {
+		.one,.two,.three,.four{
+		width: 180px;
+		height: 180px;
+		margin: 5px;
+	}
+		.one a,.two a,.three a,.four a {
+		text-align: center;
+		opacity: 0.4;
+	}
+		.one p,.two p,.three p,.four p {
+		text-align: center;
+		margin-top: -100px;
+		display: block;
+	}
+	}
+	@media only screen and (min-width: 100px) and (max-width: 320px) {
+		.one,.two,.three,.four{
+		width: 130px;
+		height: 130px;
+		margin: 5px;
+		font-size: 12px;
+	}
+		.one a,.two a,.three a,.four a {
+		text-align: center;
+		opacity: 0.4;
+	}
+		.one p,.two p,.three p,.four p {
+		text-align: center;
+		margin-top: -100px;
+		display: block;
+	}
+	}
+	/*作品部分结束*/
+	
+	
+
+
+
+	.sayfade{
+		display: block;
+		animation: sayfade 2s;
+	}

@@ -1,0 +1,105 @@
+		
+		/*首页部分开始*/
+		
+		.section.current .say-f{
+				transform: translateX(0px) translateY(0px);
+			} 
+			.section.current .say-s{
+				transform: translateX(0) translateY(0);
+			}	
+			.section.current .page-img{
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .web-web{
+				font-size: 200px;
+			}
+			
+		/*首页部分结束*/
+		
+		/*关于我部分开始*/
+		.section.current .ame{
+				animation: aboutme 2s;
+				animation-fill-mode: forwards;
+			}
+			.section.current .me p:nth-child(1) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(1) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(2) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(2) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(3) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(3) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(4) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(4) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(5) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(5) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(6) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(6) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(7) span:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .me p:nth-child(7) span:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+		/*关于我部分结束*/
+		/*自我介绍部分开始*/
+			.section.current .question ul li:nth-child(1){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .question ul li:nth-child(2){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .question ul li:nth-child(3){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .question ul li:nth-child(4){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .question ul li:nth-child(5){
+				transform: translateX(0) translateY(0);
+			}
+			.section.current .answer{
+				transform: translateX(0) translateY(0);
+			}
+		/*自我介绍部分结束*/
+		
+		/*技术部分开始*/
+		@keyframes rot{
+			0%{
+				transform: translate(-50%,-50%) rotate(0deg);
+				}
+			100%{
+				transform: translate(-50%,-50%) rotate(360deg);
+			}
+		}
+		@keyframes rot-reverse{
+			0%{
+				transform: translate(-50%,-50%) rotate(0deg);
+			}
+			100%{
+				transform: translate(-50%,-50%) rotate(-360deg);
+			}
+		}
+		/*技术部分结束*/

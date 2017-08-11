@@ -1,0 +1,79 @@
+
+
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		background: #AFD9EE;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+		background: #CCCCCC;
+	}
+	
+	.img{
+		width: 400px;
+		height: 250px;
+		background: red;
+		margin-bottom: 15px;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.img{
+		width: 200px;
+		height: 150px;
+		background: red;
+		margin-bottom: 15px;
+	}
+	}
+	.img img{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.line{
+		width: 80%;
+		height: 2px;
+		background: #777777;
+	}
+	
+	.my-photo{
+		width: 200px;
+		height: 200px;
+		margin-top: 100px;
+	}
+	.my-photo img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	
+	.my-photo p{
+		text-align: center;
+		margin-top: 15px;
+	}
+	
+	
+	.resume{
+		margin-top: 100px;
+	}
+	.resume p{
+		text-align: center;
+	}
+	.resume p a{
+		font-size: 18px;
+	}
+
+
+	.project1{
+		margin-left: 25%;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+
+	.also{
+		margin-bottom: 150px;
+	}

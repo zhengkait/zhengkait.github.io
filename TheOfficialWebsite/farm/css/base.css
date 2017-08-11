@@ -1,0 +1,322 @@
+
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		width: 100%;
+		background: #f2f2f2;
+	}
+	
+
+	.navbar{
+		background: #e7d5d4;
+	}
+	.navbar-header a{
+		font-size: 30px;
+		font-weight: bold;
+		color: green;
+	}
+
+	
+	
+	.inp{
+		margin-top: 50px;
+		height: 100px;
+	}
+	.input{
+		height: 100%;
+	}
+	.input1{
+		padding: 0;
+		height: 100%;
+	}
+	.input1 input{
+		width: 70%;
+		height: 30%;
+		margin-top: 50px;
+		border: 1px solid #000;
+	}
+	.button{
+		padding: 0;
+		height: 100%;
+	}
+	.button button{
+		width: 20%;
+		height: 30%;
+		margin-top: 50px;
+		border: 1px solid #000;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.button button{
+		width: 60%;
+		height: 30%;
+		margin-top: 50px;
+		border: 1px solid #000;
+	}
+	}
+
+	
+	
+	
+	
+	
+	.notice{
+		height: 600px;
+		background: url(../img/bg01.jpg) no-repeat center;
+		background-size: cover;
+	}
+	
+	.no{
+		width: 90%;
+		height: 90%;
+		margin: auto;
+		margin-top: 30px;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 739px) {
+		.no{
+		width: 90%;
+		height: 45%;
+		margin: auto;
+		margin-top: 30px;
+	}
+	}
+	.notice-img{
+		height: 100%;
+	}
+	.img{
+		position: relative;
+		height: 90%;
+		border: /*1px*/ solid #000;
+	}
+	.img img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.img a{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.img-list{
+		height: 10%;
+		background: #C0C0C0;
+	}
+	.img-list ul{
+		width: 100%;
+		height: 100%;
+	}
+	.img-list li{
+		float: left;
+		list-style: none;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 50px;
+		width: 20%;
+		height: 100%;
+		border: 1px solid #000;
+		cursor: pointer;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.img-list li{
+		float: left;
+		list-style: none;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 20px;
+		width: 20%;
+		height: 100%;
+		border: 1px solid #000;
+	}
+	}
+	
+	.notice-board{
+		height: 100%;
+		background: goldenrod;
+	}
+	.dynamic{
+		padding: 0 30px;
+		height: 10%;
+		font-size: 18px;
+		line-height: 50px;
+		background: #C0C0C0;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.dynamic{
+		padding: 0 30px;
+		height: 10%;
+		font-size: 10px;
+		line-height: 25px;
+		background: #C0C0C0;
+	}
+	}
+	.news{
+		height: 90%;
+		padding: 15px;
+	}
+	
+	.notice-board p{
+		font-size: 18px;
+		overflow: hidden;/*内容超出后隐藏*/
+		text-overflow: ellipsis;/* 超出内容显示为省略号*/
+		white-space: nowrap;/*文本不进行换行*/
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.news{
+		height: 90%;
+		padding: 15px;
+		font-size: 6px;
+	}
+	.notice-board p{
+		line-height: 10px;
+		font-size: 12px;
+		overflow: hidden;/*内容超出后隐藏*/
+		text-overflow: ellipsis;/* 超出内容显示为省略号*/
+		white-space: nowrap;/*文本不进行换行*/
+	}
+	}
+	
+	
+	
+	.cont{
+		background: #f2f2f2;
+	}
+	.action{
+		padding: 0;
+	}
+	
+	.actions-title{
+		width: 100%;
+		height: 50px;
+		font-size: 24px;
+		line-height: 50px;
+		padding: 0 30px;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.actions-title{
+			font-size: 18px;
+		}
+		
+	}
+	
+	
+	
+	.action-cont{
+		border: 1px solid #000;
+		height: 500px;
+	}
+	.action-cont ul{
+		width: 100%;
+		height: 8%;
+	}
+	.action-cont>ul>li{
+		list-style: none;
+		float: left;
+		width: 20%;
+		height: 100%;
+		font-size: 18px;
+		text-align: center;
+		line-height: 40px;
+		cursor: pointer;
+		border: 1px solid #000;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.action-cont>ul>li{
+			width: 25%;
+			font-size: 12px;
+		}
+	}
+	.farm-poj{
+		padding: 0;
+		height: 550px;
+	}
+	.farm-poj-title{
+		width: 100%;
+		height: 50px;
+		margin-left: 0;
+		font-size: 24px;
+		line-height: 50px;
+		padding: 0 30px;
+		background: #f2f2f2;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.farm-poj-title{
+			font-size: 18px;
+			padding: 0 15px;
+		}
+	}
+	.farm-poj-img{
+		margin-bottom: 15px;
+	}
+	.farm-poj-img-img{
+		width: 200px;
+		height: 150px;
+		margin-left: 10px;
+	}
+	@media only screen and (min-width: 100px) and (max-width: 640px) {
+		.farm-poj-img-img{
+		width: 150px;
+		height: 150px;
+		margin-left: 10px;
+	}
+	}
+	.farm-poj-img-img>img{
+		width: 100%;
+		height: 100%;
+	}
+	.tn-action img{
+		width: 100%;
+		height: 100%;
+	}
+	.discount-title{
+		padding: 15px;
+		width: 100%;
+		height: 50px;
+		font-size: 18px;
+		line-height: 20px;
+		margin-left: 0;
+		background: #CCCCCC;
+	}
+	.discount-list{
+		padding: 15px;
+		margin-left: 0;
+		margin-right: 0;
+		height: 250px;
+	}
+	.discount-list ul{
+		margin-left: 30px;
+		width: 100%;
+		height: 100%;
+	}
+	.discount-list ul li{
+		margin: 5px 0;
+	}
+	.farm-brief{
+		margin-left: 30px;
+		font-size: 18px;
+	}
+	.brief{
+		width: 100%;
+		height: 140px;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 15px;
+		border: 1px solid #000;
+	}
+	
+	
+	
+	footer{
+		margin-top: 150px;
+	}
+	
+	.imgindex{
+		z-index: 1;
+	}
+	.libg{
+		background: goldenrod;
+	}
