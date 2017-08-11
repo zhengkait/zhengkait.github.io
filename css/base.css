@@ -232,14 +232,13 @@
 		background: blueviolet;
 	}
 	.A{
-		
 		border-radius: 50px;
 		border: 1px solid #000;
 		text-align: center;
 		overflow: hidden;
 	}
 	.answer-answer{
-		height: 200px;
+		height: 190px;
 		overflow: hidden;
 	}
 	.intention-intention{
@@ -257,9 +256,10 @@
 		margin: 5px auto;
 	}
 	.answer-answer{
-		height: 125px;
+		height: 130px;
 		overflow: hidden;
 	}
+	
 	.an>p{
 		line-height: 12px;
 	}
